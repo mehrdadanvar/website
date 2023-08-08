@@ -1,10 +1,8 @@
 <template>
-  <div class="text-white">
+  <div class="white">
     <h1>Resume</h1>
     <ResumeEducation />
-    <ResumeBio />
-    <ResumeBio />
-    <ResumeBio />
+    <ResumeClinical />
   </div>
 </template>
 

@@ -1,15 +1,15 @@
 import { MongoClient } from "mongodb";
 export default defineEventHandler(async (event) => {
-  let unis: any = [];
-  const uri: string = process.env.MONGO_URI!;
+  let docs = [];
+  const uri = process.env.MONGO_URI;
   const client = new MongoClient(uri);
   async function run() {
     try {
       const database = client.db("port");
-      const collection = database.collection("schools");
+      const collection = database.collection("pubs");
       const cursor = collection.find({});
       await cursor.forEach((item) => {
-        unis.push(item);
+        docs.push(item);
       });
     } finally {
       // Ensures that the client will close when you finish/error
@@ -17,5 +17,8 @@ export default defineEventHandler(async (event) => {
     }
   }
   await run().catch(console.dir);
-  return unis;
+  let sorted_docs = docs.sort((a, b) => {
+    return a.id - b.id;
+  });
+  return sorted_docs;
 });

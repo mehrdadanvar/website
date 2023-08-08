@@ -3,10 +3,9 @@
     <section class="border border-gray-300 rounded-lg p-6 flex flex-col gap-y-6 items-center h-screen">
       <h1 class="text-gray-700 text-3xl">Mehrdad Anvar</h1>
       <div class="my-6 text-xl text-gray-500">
-        <h2>Nickname : Mario</h2>
         <h4>General Physician</h4>
         <h4>Health Researcher</h4>
-        <h4>Junior Full Stack Developer</h4>
+        <h4>Full Stack Developer</h4>
       </div>
       <p class="my-6 p-6 text-xl text-gray-500">
         I build full stack web application that facilitate providing care for patients, teach programming and
