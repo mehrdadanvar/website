@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="250"
+   height="250"
+   viewBox="0 0 66.14583 66.145835"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="92.741089"
+       y="108.86515"
+       width="272.46567"
+       height="266.18314"
+       id="rect242" />
+    <rect
+       x="103.57891"
+       y="118.63741"
+       width="244.05717"
+       height="226.61652"
+       id="rect236" />
+  </defs>
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text234"
+       style="font-size:35.3295px;font-family:Suranna;-inkscape-font-specification:'Suranna, Normal';white-space:pre;shape-inside:url(#rect236);fill:#808080" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:dsrom10;-inkscape-font-specification:'dsrom10, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;stroke-width:0.264583"
+       x="2.2463126"
+       y="39.556744"
+       id="text406"><tspan
+         id="tspan404"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:dsrom10;-inkscape-font-specification:'dsrom10, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583;fill:#4d4d4d"
+         x="2.2463126"
+         y="39.556744">Rxcode</tspan></text>
+  </g>
+</svg>
