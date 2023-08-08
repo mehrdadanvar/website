@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 export default defineEventHandler(async (event) => {
-  let jobs: any = [];
-  const uri: string = process.env.MONGO_URI!;
+  let jobs = [];
+  const uri = process.env.MONGO_URI;
   const client = new MongoClient(uri);
   async function run() {
     try {
