@@ -7,4 +7,7 @@ export default defineNuxtConfig({
     icons: ["solar", "carbon"],
   },
   // css: ["@/assets/css/main.css"],
+  runtimeConfig: {
+    apiSecret: process.env.mongoURI,
+  },
 });

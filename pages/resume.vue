@@ -10,6 +10,9 @@
 definePageMeta({
   layout: "resume",
 });
+const config = useRuntimeConfig();
+console.log(config);
+console.log(config.mongoURI);
 let schools = ref([]);
 async function load() {
   let response = await fetch("http://localhost:8000/resume/schools");

@@ -1,3 +1,5 @@
+let config = useRuntimeConfig();
+console.log(config.apiSecret);
 export default defineEventHandler(async (event) => {
   return {
     languages: [

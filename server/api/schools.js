@@ -1,7 +1,9 @@
 import { MongoClient } from "mongodb";
+let config = useRuntimeConfig();
+console.log(config.apiSecret);
 export default defineEventHandler(async (event) => {
   let unis = [];
-  const uri = process.env.MONGO_URI;
+  const uri = config.apiSecret;
   const client = new MongoClient(uri);
   async function run() {
     try {
