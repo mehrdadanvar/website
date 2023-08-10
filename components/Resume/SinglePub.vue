@@ -1,9 +1,7 @@
 <template>
   <section>
     <div class="mb-12 px-1 flex flex-row h-auto min-h-full w-2/4 mt-12">
-      <div class="bg-gray-300 rounded-l-lg py-4 px-4 shadow-sm shadow-slate-400">
-        <img src="../assets/svgs/cjt1.jpg" alt="" width="150" class="py-24" />
-      </div>
+      <div class="bg-gray-300 rounded-l-lg py-4 px-4 shadow-sm shadow-slate-400"></div>
       <div class="border-2 border-slate-100 rounded-r-lg py-4 px-6 bg-slate-100 shadow-sm shadow-slate-400">
         <h4 class="font-bold mb-3">{{ props.title }}</h4>
         <div class="my-2 grid grid-cols-2 gap-12">
