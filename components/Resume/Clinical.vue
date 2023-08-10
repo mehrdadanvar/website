@@ -1,21 +1,18 @@
 <template>
-  <section class="container mx-auto font-LibreFranklin">
-    <div class="">
-      <img src="" alt="" width="70" />
-      <h4 class="text-2xl mt-7">Clinical Experience</h4>
-    </div>
-    <div class="grid grid-cols-1 gap-6">
-      <div v-for="job in jobs" :key="job" class="my-2">
-        <div class="flex flex-row justify-normal gap-12 py-2 px-6 rounded-t-lg">
-          <h4 class="font-bold mb-6">{{ job.title }}</h4>
-          <p>{{ job.period }}</p>
-        </div>
-        <div class="py-2 px-6">
-          <p class="italic">{{ job.place }}</p>
-          <ol v-for="x in job.geo" :key="x">
-            <li>{{ x }}</li>
-          </ol>
-          <p>{{ job.definition }}</p>
+  <section class="flex flex-col gap-8">
+    <h2 class="text-2xl">Clinical Experience</h2>
+    <div class="grid grid-cols-1 gap-10">
+      <div v-for="job in jobs" :key="job" class="sm:flex sm:flex-col sm:gap-6 md:flex md:flex-row">
+        <h3 class="text-lg min-w-fit">{{ job.period }}</h3>
+        <div class="flex flex-col">
+          <h4 class="font-bold text-cyan-900 lg:text-xl">{{ job.title }}</h4>
+          <div class="py-2">
+            <p class="text-lg">{{ job.place }}</p>
+            <ol class="flex gap-3 text-lg">
+              <li v-for="x in job.geo" :key="x">{{ x }}</li>
+            </ol>
+            <p class="text-lg">{{ job.definition }}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,9 @@
 <template>
-  <main class="container mx-12 grid grid-cols-1">
+  <main class="container grid grid-cols-1 divide-y-2 divide-gray-200 p-6">
     <ResumeEducation />
+
     <ResumeClinical />
+
     <ResumePublications />
   </main>
 </template>
@@ -26,4 +28,4 @@ async function load() {
 }
 </script>
 
-<style l></style>
+<style></style>

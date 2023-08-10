@@ -11,7 +11,6 @@ module.exports = {
     extend: {
       fontFamily: {
         LibreFranklin: ["'Libre Franklin'"],
-        raleway: ["Raleway"],
       },
     },
   },

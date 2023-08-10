@@ -1,48 +1,31 @@
 <template>
   <section>
-    <div class="mb-12 px-1 flex flex-row h-auto min-h-full w-2/4 mt-12">
-      <div class="bg-gray-300 rounded-l-lg py-4 px-4 shadow-sm shadow-slate-400"></div>
-      <div class="border-2 border-slate-100 rounded-r-lg py-4 px-6 bg-slate-100 shadow-sm shadow-slate-400">
-        <h4 class="font-bold mb-3">{{ props.title }}</h4>
-        <div class="my-2 grid grid-cols-2 gap-12">
-          <p class="italic text-slate-600">{{ props.journal }}.</p>
-          <p class="text-slate-600">{{ props.year }}</p>
+    <div class="flex flex-row gap-6 p-6">
+      <h3 class="text-lg antialiased min-w-fit">{{ props.year }}</h3>
+      <div class="flex flex-col gap-y-4">
+        <h4 class="font-bold text-gray-700 lg:text-xl">
+          <a :href="props.pdf" target="_blank">{{ props.title }}</a>
+        </h4>
+        <div class="flex gap-2">
+          <p class="text-gray-600">{{ props.journal }}.</p>
+          <UIcon name="i-solar-map-arrow-square-bold-duotone" class="text-xl text-sky-700 hover:text-2xl" />
         </div>
-        <div class="my-2">
-          <span class="mr-1 text-slate-600" v-for="(author, index) in props.authors" :key="index"
+        <div class="flex flex-wrap gap-1">
+          <span
+            class="text-gray-600"
+            v-for="(author, index) in props.authors"
+            :key="index"
+            :class="{ 'text-sky-900 ': author == 'Mehrdad Anvar' }"
             >{{ author }}{{ index < props.authors.length - 1 ? ", " : "." }}</span
           >
         </div>
-        <div class="flex flex-row justify-around text-sm my-6">
-          <button
-            class="bg-white border-2 border-slate-200 shadow-inner rounded-md w-36 h-12 hover:bg-slate-500 hover:text-white"
-            @click="isOpen = !isOpen"
-          >
-            {{ isOpen ? "Close" : "Read Abstract" }}
-          </button>
-          <a
-            :href="props.pdf"
-            target="_blank"
-            class="bg-white border-2 border-slate-200 rounded-md w-36 h-12 shadow-inner hover:bg-slate-400 hover:text-white px-10 py-3"
-          >
-            View PDF</a
-          >
-
-          <!-- <p class="bg-red-300">{{ pub.id }}</p> -->
-          <!-- <p v-show="isOpen">{{ pub.abstract }}</p> -->
+        <div class="flex gap-2 items-center">
+          <span>Abstract</span>
+          <UIcon name="i-solar-double-alt-arrow-down-line-duotone" class="text-lg" @click="show_abstract" />
         </div>
-        <div>
-          <div
-            :show="isOpen"
-            enter="transition-opacity duration-250"
-            enter-from="opacity-0"
-            enter-to="opacity-100 text-slate-500"
-            leave="transition-opacity duration-250"
-            leave-from="opacity-50"
-            leave-to="opacity-0"
-          >
-            {{ props.abstract }}
-          </div>
+
+        <div class="transition-all text-slate-500">
+          <div :class="{ hidden: !isOpen, 'ease-linear duration-75': isOpen }">{{ props.abstract }}</div>
         </div>
       </div>
     </div>
@@ -59,6 +42,9 @@ let props = defineProps({
   abstract: { type: String, default: "lorem ipsum" },
 });
 let isOpen = ref(false);
+function show_abstract() {
+  isOpen.value = !isOpen.value;
+}
 </script>
 
 <style scoped></style>
