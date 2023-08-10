@@ -1,9 +1,9 @@
 <template>
-  <div class="white">
-    <h1>Resume</h1>
+  <main class="container mx-12 grid grid-cols-1">
     <ResumeEducation />
     <ResumeClinical />
-  </div>
+    <ResumePublications />
+  </main>
 </template>
 
 <script setup>
@@ -26,4 +26,4 @@ async function load() {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style l></style>

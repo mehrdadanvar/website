@@ -1,31 +1,29 @@
 <template>
-  <div class="container mx-auto font-LibreFranklin">
+  <section class="container mx-auto">
     <div class="">
-      <img src="" alt="" width="50" />
-      <h1 class="text-2xl">Education</h1>
+      <h2 class="text-xl">Education</h2>
     </div>
     <div id="wrapper">
       <div v-for="x in schools" :key="x" class="my-6 sm:flex sm:flex-col sm:gap-6 md:flex md:flex-row">
-        <div class="sm:flex-col md:flex-row lg:grid grid-cols-8">
-          <div class="bg-gray-600 rounded-l-lg py-4 px-4 col-span-2">
-            <img class="bg-white rounded-full" src="" alt="" width="100" />
-          </div>
-          <div
-            class="border border-gray-200 rounded-r-lg py-4 px-6 w-3/5 text-gray-700 flex flex-col gap-3 col-span-6 min-w-fit"
-          >
-            <div class="flex flex-row gap-6 font-bold text-gray-800">
-              <h4>{{ x.name }}</h4>
-              <p>{{ x.dates }}</p>
+        <div class="flex flex-row gap-6 p-6 lg:ml-24">
+          <h3 class="">{{ x.dates }}</h3>
+          <div class="">
+            <div class="flex flex-row font-bold text-gray-800 lg:text-lg">
+              <h3>{{ x.name }}</h3>
             </div>
-            <p class="text-gray-700">{{ x.major }}</p>
-            <p>{{ x.level }}</p>
-            <p>{{ x.location }}</p>
-            <span>GPA {{ x.grade }}</span>
+            <div class="text-gray-700 flex lg:text-lg gap-4">
+              <h4 class="">{{ x.major }}</h4>
+              <h4>{{ x.level }}</h4>
+            </div>
+            <div class="text-gray-600 flex lg:text-lg gap-4">
+              <h4>{{ x.location }}</h4>
+              <h5>GPA {{ x.grade }}</h5>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -35,4 +33,4 @@ console.log(schools);
 //let school_logos = ref(["../assets/svgs/school1.svg", "../assets/svgs/school2.png"]);
 </script>
 
-<style></style>
+<style scoped></style>

@@ -1,11 +1,10 @@
 <template>
-  <div class="font-normal font-sans">
-    <img src="../assets/svgs/publication.svg" alt="" width="70" />
+  <section class="">
     <h4 class="text-2xl mb-12">Peer Reviewed Publications</h4>
-    <div class="comtainer mb-12">
-      <HeadlessTabList class="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
-        <HeadlessTab v-for="pub in pubs" as="template" :key="pub" v-slot="{ selected }">
-          <button
+    <div class="container mb-12">
+      <div class="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+        <div v-for="pub in pubs" as="template" :key="pub">
+          <!-- <button
             :class="[
               'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
               'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
@@ -13,13 +12,13 @@
             ]"
           >
             {{ pub.id }}
-          </button>
-        </HeadlessTab>
-      </HeadlessTabList>
-      <HeadlessTabPanels>
-        <HeadlessTabPanel class="bg-slate-100" v-for="pub in pubs">
+          </button> -->
+        </div>
+      </div>
+      <div>
+        <div class="bg-slate-100" v-for="pub in pubs">
           <div>
-            <SinglePub
+            <ResumeSinglePub
               :title="pub.title"
               :journal="pub.journal"
               :year="pub.year"
@@ -28,11 +27,11 @@
               :abstract="pub.abstract"
             />
           </div>
-        </HeadlessTabPanel>
-      </HeadlessTabPanels>
+        </div>
+      </div>
     </div>
     <div class="grid grid-cols-1"></div>
-  </div>
+  </section>
 </template>
 
 <script setup>
