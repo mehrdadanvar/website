@@ -1,17 +1,11 @@
 <template>
   <section class="flex flex-col gap-8">
-    <h2 class="text-2xl">Education</h2>
-    <div
-      v-for="x in schools"
-      :key="x"
-      class="sm:flex sm:flex-col sm:gap-6 md:flex md:flex-row tracking-wider"
-    >
-      <div class="flex flex-row gap-6 p-6 lg:ml-24">
-        <h3 class="text-lg antialiased min-w-fit">{{ x.dates }}</h3>
-        <div class="ml-6">
-          <div class="flex flex-row font-bold text-gray-700 lg:text-xl">
-            <h3>{{ x.name }}</h3>
-          </div>
+    <h2 class="text-xl">Education</h2>
+    <div class="grid grid-cols-1 gap-10">
+      <div v-for="x in schools" :key="x" class="sm:flex sm:flex-col sm:gap-6 md:flex md:flex-row md:gap-12">
+        <h3 class="text-lg min-w-fit">{{ x.dates }}</h3>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold text-sky-800 lg:text-xl">{{ x.name }}</h3>
           <div class="text-gray-700 flex lg:text-lg gap-4">
             <h4 class="">{{ x.major }}</h4>
             <h4>{{ x.level }}</h4>

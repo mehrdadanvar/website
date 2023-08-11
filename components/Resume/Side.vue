@@ -1,6 +1,6 @@
 <template>
   <section
-    class="grid grid-cols-1 gap-2 p-6 lg:grid lg:grid-cols-1 lg:items-center lg:h-screen font-LibreFranklin bg-gradient-to-br from-white via-white to-slate-300/70"
+    class="grid grid-cols-1 gap-2 p-6 lg:grid lg:grid-cols-1 lg:items-center lg:h-screen bg-gradient-to-br from-white via-white to-slate-300/90"
   >
     <h1 class="text-gray-700 sm: text-xl lg:text-3xl">Mehrdad Anvar</h1>
     <div class="text-gray-500 text-sm lg:text-2xl">
@@ -12,14 +12,14 @@
       I build application that facilitate care, teach programming and statistics.
     </p>
     <address
-      class="flex sm:flex-row gap-4 transition-all duration-75 ease-linear lg:gap-10 lg:justify-center"
+      class="flex container mx-auto gap-4 transition-all duration-75 ease-linear lg:gap-10 lg:justify-center"
     >
       <div
         v-for="item in socials"
         :key="item.id"
         class="sm:text-md lg:text-2xl text-gray-500 transition-all ease-linear duration-75 hover:text-cyan-600 hover:scale-110"
       >
-        <a :href="item.link.includes('https') ? item.link : `${item.link}`" class="">
+        <a :href="item.link.includes('https') ? item.link : `${item.link}`" target="_blank">
           <UIcon :name="item.icon_name" />
         </a>
       </div>
