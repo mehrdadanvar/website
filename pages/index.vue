@@ -10,7 +10,7 @@
         <HeroTerminal />
       </div>
       <div class="-mt-96 -z-10">
-        <img src="sample1.png" alt="" width="800" class="" />
+        <img src="./sample1.png" alt="" width="800" class="" />
       </div>
     </div>
   </div>
