@@ -1,7 +1,0 @@
-<template>
-  <div>this is the new project</div>
-</template>
-
-<script setup></script>
-
-<style lang="scss" scoped></style>

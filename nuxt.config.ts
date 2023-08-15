@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxthq/ui"],
   ssr: true,
   ui: {
-    icons: ["solar", "carbon", "simple-icons"],
+    icons: ["solar", "carbon", "simple-icons", "skill-icons"],
   },
   // css: ["@/assets/css/main.css"],
   runtimeConfig: {

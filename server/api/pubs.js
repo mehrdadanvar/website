@@ -1,6 +1,5 @@
 import { MongoClient } from "mongodb";
 let config = useRuntimeConfig();
-console.log(config.apiSecret);
 export default defineEventHandler(async (event) => {
   let docs = [];
   const uri = config.apiSecret;
@@ -18,7 +17,7 @@ export default defineEventHandler(async (event) => {
       await client.close();
     }
   }
-  await run().catch(console.dir);
+  await run();
   let sorted_docs = docs.sort((a, b) => {
     return a.id - b.id;
   });

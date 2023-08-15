@@ -1,6 +1,5 @@
 import { MongoClient } from "mongodb";
 let config = useRuntimeConfig();
-console.log(config.apiSecret);
 export default defineEventHandler(async (event) => {
   let unis = [];
   const uri = config.apiSecret;
@@ -18,6 +17,6 @@ export default defineEventHandler(async (event) => {
       await client.close();
     }
   }
-  await run().catch(console.dir);
+  await run().catch();
   return unis;
 });

@@ -22,7 +22,6 @@
 
 <script setup>
 let { data: schools } = await useFetch("/api/schools");
-console.log(schools);
 
 //let school_logos = ref(["../assets/svgs/school1.svg", "../assets/svgs/school2.png"]);
 </script>

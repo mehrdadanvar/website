@@ -18,9 +18,11 @@ export default defineEventHandler(async (event) => {
       await client.close();
     }
   }
-  await run().catch(console.dir);
+  await run().catch();
   // let sorted_jobs = jobs.sort((a: any, b: any) => {
   //   return a.id - b.id;
   // });
-  return jobs;
+  return jobs.sort((a, b) => {
+    return b.identity - a.identity;
+  });
 });
