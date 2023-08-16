@@ -4,7 +4,7 @@
       <div>
         <canvas id="canvas" width="1000" height="1000" class="border border-gray-500 rounded-lg"></canvas>
       </div>
-      <div>we added some thing added some more things</div>
+      <div>we added some thing</div>
     </div>
   </ClientOnly>
 </template>
