@@ -6,6 +6,7 @@
     <div class="flex gap-6">
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/resume">resume</NuxtLink>
+      <NuxtLink to="/projects">projects</NuxtLink>
     </div>
   </nav>
 </template>
