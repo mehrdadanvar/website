@@ -1,53 +1,24 @@
 <template>
-  <div class="test relative">
-    <div class="grid grid-cols-1 mx-12 gap-y-12">
-      <h1 class="text-gray-700 text-2xl mx-auto">
-        A Place Where My Passion For Programming and Medicine meet
-      </h1>
-      <h2 class="text-2xl text-gray-600 mx-auto">I am a physician interested in health at scale</h2>
-      <h3 class="text-xl mx-auto">Thats why I love computers and programming</h3>
-      <div class="hidden md:block md:mx-auto md:w-2/3 md:max-w-2xl">
-        <HeroTerminal />
+  <IndexHeader />
+  <section
+    class="border-2 border-slate-300 mx-auto h-screen w-10/12 bg-white rounded-2xl text-black -mt-12"
+  >
+    <div class="content grid grid-cols-3 gap-12 pt-48 px-12">
+      <div class="col-span-1">
+        <img src="projects.png" alt="" class="rounded-xl hue-rotate-50" />
       </div>
-      <div class="-mt-96 -z-10">
-        <img src="/sample1.png" alt="" width="800" class="" />
+      <div class="col-span-2">
+        <h2>Projects</h2>
+        <h2>Blog</h2>
+        <h2>Programming Languages</h2>
+        <h2>Youtube</h2>
+        <h2></h2>
+        <h2></h2>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script setup>
-let my_svg = ref("");
-async function load_svg() {
-  try {
-    let response = await fetch("/background.svg");
-    let svgText = await response.text();
-    if (response.status === 200) {
-      let animatedContent = "";
-      let paths = svgText.match(/<g[^>]*\/>/g); // Extract individual path tags
-      if (paths) {
-        for (let i = 0; i < paths.length; i++) {
-          console.log(i);
-          await new Promise((resolve) => setTimeout(resolve, 1)); // Wait for animation effect
-          my_svg.value = animatedContent;
-        }
-      }
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
-</script>
+<script setup></script>
 
-<style scoped>
-/* .container {
-  background-image: url("/background.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-/* .test {
-  background-image: url("/sample.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-</style>
+<style lang="scss" scoped></style>
