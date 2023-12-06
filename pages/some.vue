@@ -13,9 +13,7 @@
       <div class="hidden md:block md:mx-auto md:w-2/3 md:max-w-2xl">
         <HeroTerminal />
       </div>
-      <div class="-mt-96 -z-10">
-        <img src="/sample1.png" alt="" width="800" class="" />
-      </div>
+      <div class="-mt-96 -z-10"></div>
     </div>
   </div>
 </template>

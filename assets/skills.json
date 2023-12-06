@@ -23,6 +23,10 @@
       "title": "Responsive Design",
       "content": "Ability to create responsive layouts that adapt to different screen sizes using media queries and flexible grids."
     },
+    {
+      "title": "CSS Preprocessors",
+      "content": "Experience with CSS preprocessors like Sass or Less to enhance maintainability and organization of stylesheets."
+    },
     {}
   ]
 }

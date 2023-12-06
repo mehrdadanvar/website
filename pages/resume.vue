@@ -14,18 +14,6 @@ definePageMeta({
   layout: "resume",
 });
 const config = useRuntimeConfig();
-
-let schools = ref([]);
-async function load() {
-  let response = await fetch("http://localhost:8000/resume/schools");
-  let data = await response.json();
-  console.log(data);
-  if (data) {
-    schools.value = data.schools;
-  } else {
-    ("");
-  }
-}
 </script>
 
 <style></style>
