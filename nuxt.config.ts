@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/ui", "@nuxtjs/google-fonts", "@nuxt/content"],
   ui: {
-    icons: ["solar", "carbon", "simple-icons", "skill-icons"],
+    icons: ["solar", "carbon", "simple-icons", "skill-icons", "ph"],
   },
   googleFonts: {
     families: {
@@ -14,10 +14,13 @@ export default defineNuxtConfig({
         wght: [100, 400],
         ital: [100],
       },
+      "Open+Sans": true,
     },
   },
   runtimeConfig: {
     apiSecret: process.env.mongoURI,
   },
-  ssr: true,
+  nitro: {
+    static: true,
+  },
 });
