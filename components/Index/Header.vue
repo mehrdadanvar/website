@@ -1,9 +1,7 @@
 <template>
-  <header class="-mt-28 h-screen text-amber-500 text-2xl">
-    <div class="py-56">
-      <h1
-        class="text-purple-400 font-bold text-4xl border border-purple-400 rounded-xl px-6 py-2 inline"
-      >
+  <header class="h-screen text-amber-500 text-2xl">
+    <div class="container py-56 mx-auto">
+      <h1 class="text-white font-bold text-4xl px-6 py-2 inline">
         Mehrdad Anvar
       </h1>
       <h2>A place where my passions for medicine and programming meet</h2>
@@ -16,7 +14,7 @@
 
 <style scoped>
 header {
-  background-image: url("hero.webp");
+  background-image: url("/hero.webp");
   background-position: center;
   background-repeat: no-repeat;
 }

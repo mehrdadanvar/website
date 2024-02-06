@@ -4,12 +4,14 @@
       class="flex flex-row items-center justify-between border border-slate-400 z-30 w-7/12 rounded-lg px-6 mx-auto max-h-12 overflow-hidden bg-white backdrop-blur-sm bg-opacity-40"
     >
       <div>
-        <img
-          src="/logo11.png"
-          alt="rx code logo"
-          class="overflow-hidden brightness-100"
-          width="75"
-        />
+        <NuxtLink to="/">
+          <img
+            src="/logo11.png"
+            alt="rx code logo"
+            class="overflow-hidden brightness-100"
+            width="75"
+          />
+        </NuxtLink>
       </div>
       <div class="flex gap-10 text-gray-900 text-base">
         <NuxtLink to="/resume">resume</NuxtLink>

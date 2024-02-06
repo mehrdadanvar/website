@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-8">
-    <h2 class="text-3xl text-yellow-600">Clinical Experience</h2>
+    <h2 class="text-3xl text-yellow-700">Clinical Experience</h2>
     <div class="grid grid-cols-1 gap-10">
       <div
         v-for="job in jobs"

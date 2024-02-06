@@ -1,25 +1,28 @@
 <template>
   <div
-    class="text-slate-400 text-lg border border-slate-800 px-6 mx-auto my-6 w-2/4 text-justify shadow-lg shadow-slate-600 rounded-xl"
+    class="bio text-gray-700 text-base border border-gray-500 px-12 py-12 mx-auto my-10 w-11/12 text-justify shadow-lg shadow-slate-400 rounded-xl"
   >
     <p class="my-3">
-      <span class="text-4xl">M</span>
-      y journey began with being born to a mother who studied public health and
-      worked as a nurse. Growing up in an academic family, I developed a natural
-      inclination towards comprehending the intricacies of the human body and
-      health. My passion for these subjects led me to pursue high school biology
-      and eventually, medical school.
+      <span class="text-4xl">I</span>
+      was born at the end of the 8-year conflict between Iran and Iraq in a
+      small town to the southwest of Iran. My mother who was the head of school
+      of nursing at the time was on the final year of graduating from the Tehran
+      Univer Growing up in an academic family, I developed a natural inclination
+      towards comprehending the intricacies of the human body and health. My
+      passion for these subjects led me to pursue high school biology and
+      eventually, medical school.
     </p>
     <p class="my-3">
-      After eight years of rigorous medical school and participation in various
-      research projects, my perspective on healthcare evolved. Although treating
-      patients was a crucial aspect of my everyday work, I yearned for a more
-      significant role in promoting health at the population level. However, the
-      curriculum primarily focused on training clinicians to manage long queues
-      of impatient patients, leaving little room for research. To address this
-      issue, I formulated a long-term plan for self-education with two primary
-      pillars that serve as the foundation of my educational and professional
-      aspirations.
+      Through eight years of rigorous medical education at
+      <span class="italic">"Shiraz University of Medical Sciences"</span>, and
+      participation in various research projects, my perspective on healthcare
+      evolved. Although treating patients was a crucial aspect of my everyday
+      work, I yearned for a more significant role in promoting health at the
+      population level. However, the curriculum primarily focused on training
+      clinicians to manage long queues of impatient patients, leaving little
+      room for research. To address this issue, I formulated a long-term plan
+      for self-education with two primary pillars that serve as the foundation
+      of my educational and professional aspirations.
     </p>
     <p class="my-3">
       Firstly, I prioritized building and maintaining a robust understanding of
@@ -44,4 +47,8 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+/* .bio {
+  font-family: Roboto;
+} */
+</style>
