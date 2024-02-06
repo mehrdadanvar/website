@@ -1,7 +1,7 @@
 <template>
   <IndexHeader />
   <section
-    class="border-2 border-slate-300 mx-auto h-screen w-10/12 bg-white rounded-2xl text-black -mt-12"
+    class="border-2 border-slate-300 mx-auto h-screen w-10/12 bg-white rounded-2xl text-black"
   >
     <div class="content grid grid-cols-3 gap-12 pt-48 px-12">
       <div class="left col-span-1 rounded-lg text-white">
@@ -41,8 +41,6 @@
 <script setup></script>
 
 <style scoped>
-.mehrdad {
-}
 .left {
   background-image: url("");
   background-size: cover;

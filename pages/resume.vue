@@ -1,7 +1,5 @@
 <template>
-  <main
-    class="container mx-auto grid grid-cols-1 divide-y-2 divide-gray-100 p-6"
-  >
+  <main class="container mx-auto grid grid-cols-1 divide-gray-100 p-6 gap-6">
     <ResumeEducation />
     <ResumeClinical />
     <ResumePublications />

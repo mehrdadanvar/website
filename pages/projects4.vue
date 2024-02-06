@@ -2,23 +2,24 @@
   <section class="describe min-w-[400px]">
     <h1>Mehrdad Anvar Projects</h1>
   </section>
-  <section class="projects rounded-xl mx-auto h-screen w-11/12 md:w-10/12 lg:w-3/4 mt-36">
-    <div class="card-holder px-12 py-6 container">
+  <section
+    class="projects rounded-xl container mx-auto h-screen w-11/12 md:w-10/12 lg:w-3/4 min-w-[400px]"
+  >
+    <div class="card-holder px-12 py-6 container flex flex-col gap-6">
       <div
-        class="project bg-white border border-slate-200 rounded-2xl transition-all duration-75 hover:scale-[1.01] hover:shadow-lg hover:shadow-gray-500"
+        class="project bg-white border border-slate-300 rounded-2xl transition-all duration-75 hover:scale-[1.01] hover:shadow-lg hover:shadow-gray-500"
         v-for="project in cardList"
         :key="project.identity"
       >
-        <div class="inner">
+        <div class="inner flex flex-col sm:grid sm:grid-cols-2">
           <div class="left">
             <img
               :src="`/${images[project.identity]}`"
-              class="rounded-full mx-auto -mt-24 shadow-lg shadow-gray-600"
-              width="200"
+              class="rounded-t-2xl sm:rounded-none sm:rounded-l-2xl min-w-[250px] sm:min-w-[500px]"
             />
           </div>
-          <div class="right">
-            <h2 class="text-amber-700 font-bold text-lg py-4 px-3">
+          <div class="right flex-col rounded-lg">
+            <h2 class="text-amber-700 font-bold text-lg py-4 mt-6 px-3">
               {{ project.title }}
             </h2>
             <p class="text-gray-700 text-lg px-4 my-6">
@@ -47,8 +48,4 @@ let images = ["gptdecipher2.jpeg", "chat2.jpeg", "heart1.png", "anatomy2.png"];
 .projects {
   font-family: "Lato";
 }
-/* .right {
-  background-repeat: no-repeat;
-  background-size: auto;
-} */
 </style>
