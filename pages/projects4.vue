@@ -22,7 +22,7 @@
             <h2 class="text-amber-700 font-bold text-lg py-4 mt-6 px-3">
               {{ project.title }}
             </h2>
-            <p class="text-gray-700 text-lg px-4 my-6">
+            <p class="text-gray-500 text-lg px-4 my-6">
               {{ project.description }}
             </p>
             <UBadge color="amber" variant="outline" class="ml-6 mb-4">
@@ -41,7 +41,7 @@
 //sm:max-w-[200px] md:max-w-[250px] lg:max-w-[350px]
 import cardList from "../src/files/projectspage.json";
 console.log(cardList);
-let images = ["gptdecipher2.jpeg", "chat2.jpeg", "heart1.png", "anatomy2.png"];
+let images = ["gptdecipher.jpeg", "chat.jpeg", "nurse.png", "anatomy2.png"];
 </script>
 
 <style scoped>
