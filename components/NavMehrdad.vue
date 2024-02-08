@@ -28,7 +28,7 @@
 <script setup>
 let navigation_links = [
   { id: 0, route: "about", lable: "About" },
-  { id: 1, route: "Resume", lable: "CV" },
+  { id: 1, route: "resume", lable: "CV" },
   { id: 2, route: "projects", lable: "Projects" },
   { id: 3, route: "blog", lable: "Blog" },
 ];
