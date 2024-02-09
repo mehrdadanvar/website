@@ -11,7 +11,7 @@
         <li>Web Design</li>
         <li></li>
       </ul>
-      <div>
+      <!-- <div>
         Data analysis: Include any statistical software you are proficient in,
         such as SAS, SPSS, or R, and mention any specific analyses you are
         skilled in, such as regression analysis, survival analysis, or
@@ -30,7 +30,7 @@
         personnel. Interdisciplinary collaboration: Highlight your ability to
         work effectively with other researchers and professionals in related
         fields, such as medicine, nursing, or social work.
-      </div>
+      </div> -->
 
       <div
         v-for="skill in raw_skills"
