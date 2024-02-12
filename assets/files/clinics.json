@@ -5,7 +5,10 @@
     "geo": ["Iran", "Hormozgan", "Kish Island"],
     "place": "Petro Orim Kish Company",
     "period": "September 2019 - October 2020",
-    "definition": "Treated injuries, common outpatient complaints, and coordinated safe transportation of emergencies on two offshore drilling units with 400 employees. Assisted in implementation of occupational safety standards.",
+    "definition": [
+      "Provided comprehensive medical care for employees within the energy sector, focusing on treating injuries, addressing common outpatient complaints, and ensuring the safe transportation of emergencies.",
+      "Managed healthcare needs, occupational risk factors across two drilling units in collaboration with safety officers, serving a workforce of 400 employees."
+    ],
     "identity": 4
   },
   {
@@ -14,7 +17,10 @@
     "place": "Namazi Hospital",
     "geo": ["Iran", "Fars", "Shiraz"],
     "period": "March 2018 - August 2019",
-    "definition": "Facilitated care of critically ill cancer patients with a team of 2 attending physicians and 10 nurses.",
+    "definition": [
+      "Facilitated inpatient care of critical oncology patients with a team of 2 attending physicians and 10 nurses.",
+      "Reviewed diagnostic plans, laboratory and imaging studies with specialist attending physicians and followed up on progression of therapeutic procedures."
+    ],
     "identity": 3
   },
   {
@@ -23,7 +29,10 @@
     "geo": ["Iran", "Kurdistan", "Saqqez"],
     "place": "Public Hospital",
     "period": "May 2016-May 2017",
-    "definition": "Performed triage and initial assessment of medical and surgical emergencies at 20-bed emergency department public hospital covering a populace of 200,000 Saqqez, Kurdistan",
+    "definition": [
+      "Conducted triage and provided initial assessments for medical and surgical emergencies within a fast-paced 20-bed emergency department, servicing a community of 200,000 individuals",
+      "Formulated and executed diagnostic plans to ensure prompt treatment for diverse presenting cases in close collaboration with on-call specialist supervisors."
+    ],
     "identity": 2
   },
   {
