@@ -1,7 +1,7 @@
 <template>
   <h3 class="text-xl text-gray-700 col-span-1">{{ props.year }}</h3>
   <div class="flex flex-col gap-2 col-span-3">
-    <h3 class="text-xl text-gray-700 lg:text-xl hover:text-teal-700">
+    <h3 class="text-xl text-gray-700 lg:text-2xl hover:text-teal-700">
       <a :href="props.pdf" target="_blank">{{ props.title }}</a>
     </h3>
     <div class="flex gap-2">

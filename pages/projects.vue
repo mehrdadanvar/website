@@ -45,7 +45,7 @@ let images = ["gptdecipher.jpeg", "chat.jpeg", "nurse.png", "anatomy2.png"];
 
 <style scoped>
 .projects {
-  font-family: "Lato";
+  font-family: "Open Sans";
 }
 /* .right {
   background-repeat: no-repeat;

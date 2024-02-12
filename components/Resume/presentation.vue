@@ -1,30 +1,28 @@
 <template>
   <section class="flex flex-col gap-8">
-    <h2 class="text-3xl text-yellow-700">Clinical Experience</h2>
+    <h2 class="text-3xl text-yellow-700">Presentation</h2>
     <div class="grid grid-cols-1 gap-10">
       <div
-        v-for="job in jobs"
-        :key="job"
+        v-for="item in projects"
+        :key="item"
         class="sm:flex sm:flex-col sm:gap-6 md:grid md:grid-cols-4"
       >
         <h4 class="text-gray-700 lg:text-xl col-span-1">
-          {{ job.period }}
+          {{ item.dates }}
         </h4>
         <div class="flex flex-col gap-2 col-span-3">
-          <h3 class="text-xl text-gray-700 lg:text-xl">{{ job.title }}</h3>
+          <h3 class="text-xl text-gray-700 lg:text-2xl">{{ item.title }}</h3>
           <div class="py-2 text-gray-500">
-            <p class="lg:text-xl">{{ job.place }}</p>
-            <ol class="flex gap-3 text-lg">
-              <li v-for="x in job.geo" :key="x">{{ x }}</li>
-            </ol>
+            <p class="text-xl">{{ item.place }}</p>
 
-            <ol
-              v-if="Array.isArray(job.definition)"
-              class="lg:text-xl flex flex-col gap-3 mt-6 list-disc"
-            >
-              <li class="listed" v-for="item in job.definition">{{ item }}</li>
-            </ol>
-            <p v-else class="text-base">{{ job.definition }}</p>
+            <p class="text-xl">
+              {{ item.explanation }}
+            </p>
+            <ul class="list-disc flex flex-col gap-2 mt-6 lg:text-xl">
+              <li v-for="bullet in item.bullet_points">
+                {{ bullet }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -33,7 +31,7 @@
 </template>
 
 <script setup>
-import jobs from "../../assets/files/clinics.json";
+import projects from "../../assets/files/presentation.json";
 //let { data: jobs } = await useFetch("http://localhost:3000/files/clinics.json");
 
 // let jobs = ref(["", ""]);
