@@ -8,7 +8,6 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Roboto: true,
-      "Josefin+Sans": true,
       Lato: [100, 300],
       "Open+Sans": true,
     },
@@ -18,5 +17,10 @@ export default defineNuxtConfig({
   },
   nitro: {
     static: true,
+  },
+  content: {
+    highlight: {
+      theme: "github-light",
+    },
   },
 });
