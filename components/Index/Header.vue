@@ -4,8 +4,7 @@
       <h1 class="text-white font-bold text-4xl px-6 py-2 inline">
         Mehrdad Anvar
       </h1>
-      <h2>A place where my passions for medicine and programming meet</h2>
-      <div class="card"></div>
+      <h2>A Personal website around Medicine and Programming</h2>
     </div>
   </header>
 </template>
