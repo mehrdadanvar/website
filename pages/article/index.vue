@@ -2,10 +2,10 @@
   <section>
     <div>welcome</div>
 
-    <ContentList path="/blog" v-slot="{ list }">
-      <div class="border border-slate-400 px-p py-6 flex">
-        <div v-for="post in list" class="">
-          <nuxt-link :to="post._path">{{ post.title }}</nuxt-link>
+    <ContentList path="/article" v-slot="{ list }">
+      <div class="border border-slate-400 px-p py-6">
+        <div v-for="sample in list" class="">
+          <nuxt-link :to="sample._path">{{ sample.title }}</nuxt-link>
         </div>
       </div>
       <!-- <div

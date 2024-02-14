@@ -1,9 +1,4 @@
 <template>
-  <main>
-    <ContentDoc />
-  </main>
+  <ContentDoc />
 </template>
-
-<script setup>
-const route = useRoute();
-</script>
+<script setup></script>

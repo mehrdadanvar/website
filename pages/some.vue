@@ -7,13 +7,25 @@
       <h2 class="text-2xl text-gray-600 mx-auto">
         I am a physician interested in health at scale
       </h2>
-      <h3 class="text-xl mx-auto">
-        Thats why I love computers and programming
-      </h3>
+      <h3 class="text-xl mx-auto">Thats why I love computers and programming</h3>
       <div class="hidden md:block md:mx-auto md:w-2/3 md:max-w-2xl">
         <HeroTerminal />
       </div>
       <div class="-mt-96 -z-10"></div>
+    </div>
+    <div class="border border-red-500">
+      <svg width="200" height="200">
+        <path
+          d="M 100,100
+         C ${getRandomPoint(100, 95, 105)},${getRandomPoint(100, 95, 105)}
+           ${getRandomPoint(100, 95, 105)},${getRandomPoint(100, 95, 105)}
+           ${getRandomPoint(100, 95, 105)},100
+           z"
+          fill="black"
+          stroke="black"
+          stroke-width="2"
+        />
+      </svg>
     </div>
   </div>
 </template>
