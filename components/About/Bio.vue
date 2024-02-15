@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bio text-gray-700 text-base border border-gray-500 px-12 py-12 mx-auto my-10 w-11/12 text-justify shadow-lg shadow-slate-400 rounded-xl"
+    class="bio text-zinc-400 px-12 py-12 mx-auto my-10 w-11/12 text-justify h-56 overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to bg-zinc-950"
   >
     <p class="my-3">
       <span class="text-4xl">I</span>
@@ -27,20 +27,22 @@
     <p class="my-3">
       Firstly, I prioritized building and maintaining a robust understanding of
       research methodology by attending university workshops that guided me in
-      learning statistics and quantitative reasoning. Secondly, I sought to
-      enhance my theoretical knowledge by voluntarily participating in drafting
-      and editing my peers' projects and seniors' dissertations. I later
-      provided consultancy in developing research proposals from raw ideas, and
-      I gained expertise in analyzing datasets in the context of each project.
+      learning statistics and quantitative reasoning. This was a turning point
+      as I became familiar withcomputer science and programming
+      <span class="text-orange-600 font-mono"
+        >computer science and programming</span
+      >
+      which later became my interests. Secondly, I sought to enhance my
+      theoretical knowledge by voluntarily participating in drafting and editing
+      my peers' projects and seniors' dissertations. I later provided
+      consultancy in developing research proposals from raw ideas, and I gained
+      expertise in analyzing datasets in the context of each project.
     </p>
     <p class="my-3">
       By the end of the eighth year, I had fortified my core skills by
       participating in a variety of study types, ranging from simple narrative
-      reviews to clinical trials. Today, I am an accomplished medical
-      professional with a comprehensive understanding of healthcare at both the
-      clinical and population levels. My experiences have instilled in me a deep
-      passion for advancing health outcomes through evidence-based research and
-      interventions.
+      reviews to clinical trials. Today, I am a nerdy medical professional with
+      an understanding of healthcare at both the clinical and population levels.
     </p>
   </div>
 </template>
