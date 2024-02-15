@@ -1,16 +1,25 @@
 <template>
   <div
-    class="bio text-zinc-400 px-12 py-12 mx-auto my-10 w-11/12 text-justify h-56 overflow-hidden rounded-xl bg-gradient-to-br from-zinc-800 to bg-zinc-950"
+    class="bio text-zinc-400 px-12 py-12 mx-auto w-11/12 text-justify rounded-xl bg-gradient-to-br from-zinc-800 to bg-zinc-950"
   >
+    <h1 class="hidden">About Mehrdad Anvar</h1>
+    <div class="absolute -mt-20 -ml-16">
+      <img
+        src="/selfie.webp"
+        alt=""
+        width="100"
+        class="border border-orange-500 rounded-full"
+      />
+    </div>
     <p class="my-3">
       <span class="text-4xl">I</span>
       was born at the end of the 8-year conflict between Iran and Iraq in a
       small town to the southwest of Iran. My mother who was the head of school
-      of nursing at the time was on the final year of graduating from the Tehran
-      Univer Growing up in an academic family, I developed a natural inclination
-      towards comprehending the intricacies of the human body and health. My
-      passion for these subjects led me to pursue high school biology and
-      eventually, medical school.
+      of nursing at the time was on the final year of graduating from Tehran
+      University of Medical Sciences. Growing up in an academic family, I
+      developed a natural inclination towards comprehending the intricacies of
+      the human body and health. My passion for these subjects led me to pursue
+      high school biology and eventually, medical school.
     </p>
     <p class="my-3">
       Through eight years of rigorous medical education at
@@ -49,8 +58,4 @@
 
 <script setup></script>
 
-<style scoped>
-/* .bio {
-  font-family: Roboto;
-} */
-</style>
+<style scoped></style>

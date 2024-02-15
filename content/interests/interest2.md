@@ -2,7 +2,7 @@
 title: Programming
 description: harnessing the transformative power of programming in healthcare, leveraging online resources like YouTube to drive innovation and positive change in the field.
 date: 2024-12-01
-tags: ["cool2.webp"]
+tags: ["cool4.png"]
 ---
 
 # Programming

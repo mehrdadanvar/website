@@ -1,5 +1,5 @@
 <template>
-  <header class="h-screen text-amber-500 text-2xl">
+  <header class="h-screen text-orange-500 text-2xl">
     <div class="container py-56 mx-auto">
       <h1 class="text-white font-bold text-4xl px-6 py-2 inline">
         Mehrdad Anvar

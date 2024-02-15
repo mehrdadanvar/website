@@ -4,7 +4,7 @@
     <div class="grid grid-cols-1 gap-10">
       <div
         class="sm:flex sm:flex-col sm:gap-6 md:grid md:grid-cols-4"
-        v-for="pub in pubs"
+        v-for="pub in newpubs"
       >
         <ResumeSinglePub
           :title="pub.title"
@@ -22,22 +22,10 @@
 <script setup>
 // let { data: pubs } = await useFetch("/api/pubs");
 import pubs from "../../assets/files/pubs.json";
-let isOpen = ref(false);
-let selected = ref("true");
-function toggle_abstract() {
-  isOpen.value = !isOpen.value;
-}
 
-// let { data: pubs } = await useFetch("http://localhost:3000/files/pubs.json");
-
-// async function load_pubs() {
-//   let response = await fetch("pubs.json");
-//   let data = await response.text();
-//   let content = JSON.parse(data);
-//   pubs.value = content;
-// }
-
-// load_pubs();
+let newpubs = pubs.sort((a, b) => {
+  return b.id - a.id;
+});
 </script>
 
 <style scoped></style>

@@ -3,8 +3,8 @@
     <ResumeEducation />
     <ResumeClinical />
     <ResumePublications />
-    <ResumeSkills />
     <ResumeResearch />
+    <!-- <ResumeSkills /> -->
   </main>
 </template>
 

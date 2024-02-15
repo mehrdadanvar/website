@@ -3,7 +3,7 @@
     class="flex flex-col h-36 py-2 md:flex-row items-center justify-between text-gray-600 md:h-28 md:px-6 xl:px-36 bg-gray-50 md:bg-gray-100 lg:bg-gray-200"
   >
     <div
-      class="logos text-sm md:text-base lg:text-2xl text-amber-600 border border-amber-600 px-4 rounded-md"
+      class="logos text-sm md:text-base lg:text-2xl text-amber-500 border border-amber-500 px-4 rounded-md"
     >
       <NuxtLink to="/">Mehrdad Anvar</NuxtLink>
     </div>
