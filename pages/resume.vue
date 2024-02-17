@@ -4,6 +4,7 @@
     <ResumeClinical />
     <ResumePublications />
     <ResumeResearch />
+    <ResumePresentation />
     <!-- <ResumeSkills /> -->
   </main>
 </template>
