@@ -5,6 +5,7 @@
     <ResumePublications />
     <ResumeResearch />
     <ResumePresentation />
+    <ResumeExam />
     <!-- <ResumeSkills /> -->
   </main>
 </template>
