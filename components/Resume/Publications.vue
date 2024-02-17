@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-8">
-    <h2 class="text-3xl text-yellow-600">Peer Reviewed Publications</h2>
+    <h2 class="text-3xl text-yellow-700">Peer Reviewed Publications</h2>
     <div class="grid grid-cols-1 gap-10">
       <div
         class="sm:flex sm:flex-col sm:gap-6 md:grid md:grid-cols-4"
