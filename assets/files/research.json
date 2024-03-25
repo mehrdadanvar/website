@@ -1,6 +1,13 @@
 [
   {
     "id": 1,
+    "title": "Community Medicine Project Assistant Manager.",
+    "dates": "(2020-2021)",
+    "explanation": "Assisted in designing electronic questionnaires and data analysis for a university-affiliated endeavour related to the prevalence of hooka smoking and cessation strategies in Shiraz.",
+    "bullet_points": []
+  },
+  {
+    "id": 2,
     "title": "Student Consultant at Shiraz Bone & Joint Research Center, Shiraz, Iran.",
     "dates": "(2016-2019)",
     "explanation": "Assisted in formulating/refining research questions, interpreting results and drafting three observational studies.",
@@ -11,7 +18,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Research Assistant at Shiraz Trauma Center, Shiraz, Iran",
     "dates": "(2015-2019)",
     "explanation": "Identified potential use of trauma center & EMS administrative databases in studying epidemiological patterns of injuries.",
@@ -21,7 +28,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Data Analysis Advisor at Shiraz Neonatology Research Center",
     "dates": "(2018-2019)",
     "explanation": "Contributed to model development in quantifying risk of catheter-related blood stream infections in neonatal intensive care units."

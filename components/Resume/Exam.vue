@@ -2,11 +2,7 @@
   <section class="flex flex-col gap-8">
     <h2 class="text-3xl text-yellow-700">Exams</h2>
     <div class="grid grid-cols-1 gap-10">
-      <div
-        v-for="item in exams"
-        :key="item"
-        class="sm:flex sm:flex-col sm:gap-6 md:grid md:grid-cols-4"
-      >
+      <div v-for="item in exams" :key="item" class="sm:flex sm:flex-col sm:gap-6 md:grid md:grid-cols-4">
         <h4 class="text-gray-700 lg:text-xl col-span-1">
           {{ item.date }}
         </h4>
